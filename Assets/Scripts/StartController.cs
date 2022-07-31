@@ -30,7 +30,6 @@ namespace Snake
         private void Awake()
         {
             _reference = new Reference();
-            //_headSnake = new HeadSnake();
             _headSnake = _reference.HeadSnake(new Vector3(0f, 0f, 0f));
             _moveSnake = new MoveSnake(_headSnake);
             _inputController = new InputController(_moveSnake);

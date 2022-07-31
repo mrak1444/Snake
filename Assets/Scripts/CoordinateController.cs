@@ -20,7 +20,7 @@ namespace Snake
         public void Execute()
         {
             if (_headSnake.transform.position == _apple.transform.position) Overlap.Invoke(true);
-            if (_headSnake.transform.position.x <= -9 || _headSnake.transform.position.x >= 9) Overlap.Invoke(false);
+            if (_headSnake.transform.position.x <= -2.2f || _headSnake.transform.position.x >= 2.2f) Overlap.Invoke(false);
             if (_headSnake.transform.position.y >= 4.3f || _headSnake.transform.position.y <= -5) Overlap.Invoke(false);
             for(int i = 0; i < _snakes.Count; i++)
             {

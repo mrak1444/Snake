@@ -12,7 +12,7 @@ namespace Snake
 
         public Vector3 Rnd()
         {
-            _goodBonusPositionX = Random.Range(-8, 8);
+            _goodBonusPositionX = Random.Range(-2, 2);
             _goodBonusPositionY = Random.Range(-4, 4);
             Vector3 RndPositionBonus = new Vector3(_goodBonusPositionX, _goodBonusPositionY, 0f);
             return RndPositionBonus;
